@@ -485,9 +485,9 @@ body{font-family:var(--f-ui);background:#171412;color:#F5F0E8}h1,h2,h3,h4,.brand
 @keyframes boutique-glint{from{background-position:6px -180px,6px 0,13px 0}to{background-position:6px calc(100% + 180px),6px 0,13px 0}}
 @media(prefers-reduced-motion:reduce){.boutique-frame::before,.boutique-frame::after{animation:none}}
 
-/* Bolsa propia y arco inferior: extremos más bajos que el centro */
+/* Bolsa propia y arco inferior: centro más bajo, costados ascendentes */
 .house-bag{display:block;flex:none}.ch h3{display:flex;align-items:center;gap:10px}.cartb .house-bag{width:22px;height:24px}
-.hero{--hero-arc:80px;padding-bottom:var(--hero-arc);-webkit-mask-image:radial-gradient(ellipse 50% var(--hero-arc) at 50% 100%,transparent calc(100% - 1px),#000 100%);mask-image:radial-gradient(ellipse 50% var(--hero-arc) at 50% 100%,transparent calc(100% - 1px),#000 100%)}
+.hero{--hero-arc:80px;padding-bottom:var(--hero-arc);-webkit-mask-image:none;mask-image:none;border-radius:0 0 50% 50% / 0 0 var(--hero-arc) var(--hero-arc)}
 @media(max-width:700px){.hero{--hero-arc:36px}}
 </style></head><body>
 <div class="boutique-frame" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
