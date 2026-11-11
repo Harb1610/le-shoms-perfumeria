@@ -390,8 +390,8 @@ footer .cp{text-align:center;letter-spacing:.06em}
 @media(max-width:420px){.ann{font-size:.6rem;letter-spacing:.1em}.trust li{flex-direction:column;gap:8px;text-align:center;font-size:.62rem;padding:16px 6px}.tools select{flex:1 1 45%}.tags span{font-size:.62rem;padding:2px 8px}}
 
 /* Correcciones de visibilidad, carrito y navegación compacta */
-html{scroll-padding-top:0;overflow-x:hidden}
-body{overflow-x:hidden}
+html{scroll-padding-top:0;overflow-x:clip}
+body{overflow-x:clip}
 .sec,section,footer{scroll-margin-top:var(--navh,104px)}
 .cd{overflow:hidden}
 .cd:not(.open) .cp{visibility:hidden;pointer-events:none}
